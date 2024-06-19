@@ -1,4 +1,4 @@
-import { FaSearch } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
 
 export const SearchBar = () => {
 	return (
@@ -8,7 +8,7 @@ export const SearchBar = () => {
 				className=" w-9/12 h-full ml-5 mr-auto bg-gray-50 text-black outline-none"
 				placeholder="검색어를 입력하세요"
 			/>
-			<FaSearch className="h-full mr-4 ml-auto" size={20} />
+			<IoIosSearch className="h-full mr-4 ml-auto" size={25} />
 		</div>
 	);
 };

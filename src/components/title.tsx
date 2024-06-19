@@ -8,13 +8,15 @@ export const Title = () => {
 	const [isOpen, setIsOpen] = useState(true);
 
 	return (
-		<div className=" w-full h-20 bg-white border-b-2 flex flex-row gap-5 items-center">
+		<div className=" w-full h-20 bg-white border-b-2 flex flex-row gap-4 items-center">
 			{isOpen && <Sidebar />}
-			<CiMenuBurger
-				className=" h-full ml-4"
-				size={35}
-				onClick={() => setIsOpen(!isOpen)}
-			/>
+			<div className=" w-12 h-12 ml-3 rounded-lg hover:bg-gray-200">
+				<CiMenuBurger
+					className=" w-full h-full p-2"
+					size={35}
+					onClick={() => setIsOpen(!isOpen)}
+				/>
+			</div>
 			<SearchBar />
 		</div>
 	);

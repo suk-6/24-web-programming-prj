@@ -12,7 +12,7 @@ export const Title = () => {
 			{isOpen && <Sidebar />}
 			<CiMenuBurger
 				className=" h-full ml-4"
-				size={40}
+				size={35}
 				onClick={() => setIsOpen(!isOpen)}
 			/>
 			<SearchBar />

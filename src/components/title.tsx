@@ -5,7 +5,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { Sidebar } from "./sidebar/sidebar";
 import { SearchBar } from "./searchBar";
 export const Title = () => {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	return (
 		<div className=" w-full h-20 bg-white border-b-2 flex flex-row gap-4 items-center">

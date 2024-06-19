@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
-import { Sidebar } from "./sidebar/sidebar";
+import { Sidebar } from "../sidebar/sidebar";
 import { SearchBar } from "./searchBar";
 export const Title = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);

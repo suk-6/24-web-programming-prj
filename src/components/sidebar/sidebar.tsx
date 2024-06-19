@@ -1,4 +1,3 @@
-import styled, { css } from "styled-components";
 import { SidebarItem } from "./sidebarItem";
 import { SidebarSeparator } from "./sidebarSeparator";
 import { SidebarSubitem } from "./sidebarSubitem";

@@ -3,8 +3,6 @@ import { Title } from "@/components/header/title";
 import { ImageSlider } from "@/components/imageSlider/imageSlider";
 import data from "@/data.json";
 
-import Example1 from "@/images/example1.png";
-
 export default function Home() {
 	return (
 		<main className=" w-screen h-screen">

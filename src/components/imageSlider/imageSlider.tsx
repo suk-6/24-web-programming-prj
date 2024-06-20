@@ -1,19 +1,17 @@
 "use client";
-
-import Example1 from "@/images/example1.png";
-import Example2 from "@/images/example2.png";
+import data from "@/data.json";
 import { ImageSliderButton } from "./imageSliderButton";
 import { useState } from "react";
 
 export const ImageSlider = () => {
-	const images = [Example1, Example2];
+	const images = Array.from(data.styles, (style) => style["image"]);
 	const [currentImage, setCurrentImage] = useState<number>(0);
 
 	return (
 		<div className="m-3 w-full h-full bg-gray-200 flex overflow-hidden relative border border-gray-200 rounded-xl shadow-xl">
 			<div
 				style={{
-					backgroundImage: `url(${images[currentImage].src})`,
+					backgroundImage: `url(${images[currentImage]})`,
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 					width: "100%",

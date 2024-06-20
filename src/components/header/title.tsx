@@ -8,7 +8,7 @@ export const Title = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	return (
-		<div className=" w-full h-20 bg-white border-b-2 flex flex-row gap-4 items-center">
+		<div className=" w-full h-20 bg-white border-b-2 flex flex-row gap-4 items-center p-0.5">
 			{isOpen && <Sidebar />}
 			<div className=" w-12 h-12 ml-3 rounded-lg hover:bg-gray-200">
 				<CiMenuBurger

@@ -3,8 +3,70 @@
 		{
 			"id": 1,
 			"title": "시스루펌",
-			"tags": ["둥근 얼굴형", "이마가 넓지 않음", "손질 잘함"],
-			"image": "https://file.suk.kr/1.png"
+			"image": "https://file.suk.kr/1.png",
+			"tags": ["둥근 얼굴형", "이마가 넓지 않음", "손질 잘함"]
+		},
+		{
+			"id": 2,
+			"title": "드랍컷",
+			"image": "https://file.suk.kr/1.png",
+			"tags": [
+				"사각 얼굴형",
+				"이마가 넓지 않음",
+				"손질 잘함",
+				"눈썹이 이쁘다"
+			]
+		},
+		{
+			"id": 3,
+			"title": "시스루 쉐도우펌",
+			"image": "https://file.suk.kr/1.png",
+			"tags": ["얼굴형 다 포함", "이마가 넓지 않음", "손질 잘함"]
+		},
+		{
+			"id": 4,
+			"title": "시스루 댄디",
+			"image": "https://file.suk.kr/1.png",
+			"tags": [
+				"얼굴형 다 포함",
+				"이마가 넓든 안넓든 다 좋다",
+				"눈썹이 안이쁘다",
+				"손질 못함"
+			]
+		},
+		{
+			"id": 5,
+			"title": "애즈펌",
+			"image": "https://file.suk.kr/1.png",
+			"tags": ["긴 얼굴형", "이마가 넓지 않음", "손질 잘함"]
+		},
+		{
+			"id": 6,
+			"title": "가일컷",
+			"image": "https://file.suk.kr/1.png",
+			"tags": [
+				"긴 얼굴형",
+				"이마가 넓지 않음",
+				"손질 잘함",
+				"눈썹이 이쁘다"
+			]
+		},
+		{
+			"id": 7,
+			"title": "리프펌",
+			"image": "https://file.suk.kr/1.png",
+			"tags": [
+				"역삼각형",
+				"이마가 넓지 않음",
+				"손질 잘함",
+				"눈썹이 안이쁘다"
+			]
+		},
+		{
+			"id": 8,
+			"title": "다운펌",
+			"image": "https://file.suk.kr/1.png",
+			"tags": ["얼굴형 다 포함", "손질 잘함"]
 		}
 	]
 }

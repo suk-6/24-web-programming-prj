@@ -3,7 +3,11 @@ import { SidebarSeparator } from "./sidebarSeparator";
 import { SidebarSubitem } from "./sidebarSubitem";
 import data from "@/data.json";
 
-export const Sidebar = () => {
+export const Sidebar = ({
+	setSearch,
+}: {
+	setSearch: (value: string) => void;
+}) => {
 	const tags = Array.from(data.styles, (style) => style["tags"]);
 	const uniqueTags = Array.from(new Set(tags.flat()));
 
@@ -12,13 +16,21 @@ export const Sidebar = () => {
 			<div className=" w-full h-full flex flex-col gap-1 p-4">
 				<SidebarItem title="스타일 별">
 					{data.styles.map((style, i) => (
-						<SidebarSubitem key={i} title={style["title"]} />
+						<SidebarSubitem
+							key={i}
+							title={style["title"]}
+							setSearch={setSearch}
+						/>
 					))}
 				</SidebarItem>
 				<SidebarSeparator />
 				<SidebarItem title="두상 별">
 					{uniqueTags.map((tag, i) => (
-						<SidebarSubitem key={i} title={tag} />
+						<SidebarSubitem
+							key={i}
+							title={tag}
+							setSearch={setSearch}
+						/>
 					))}
 				</SidebarItem>
 			</div>

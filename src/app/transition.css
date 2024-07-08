@@ -1,0 +1,21 @@
+.card {
+	transition: flex 500ms ease-out;
+}
+
+/* .card-enter {
+	height: 40rem;
+} */
+
+/* .card-enter-active {
+	transition: all 5000ms ease-out;
+} */
+
+.card-exit {
+	transform: translateX(0);
+}
+
+.card-exit-active {
+	transition: all 500ms ease-out;
+	transform: translateX(600%);
+	opacity: 0;
+}

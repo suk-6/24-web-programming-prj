@@ -12,7 +12,10 @@ export const SidebarSubitem = ({ title, setSearch }: SidebarItemProps) => {
 			<Image src={downRightIcon} alt="guide" className=" h-3.5" />
 			<div
 				className=" ml-1 w-full hover:bg-gray-200 rounded-lg px-1.5"
-				onClick={() => setSearch(title)}
+				onClick={() => {
+					setSearch(" ");
+					setTimeout(() => setSearch(title), 300);
+				}}
 			>
 				{title}
 			</div>

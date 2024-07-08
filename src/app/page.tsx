@@ -5,6 +5,8 @@ import { Title } from "@/components/header/title";
 import { ImageSlider } from "@/components/imageSlider/imageSlider";
 import data from "@/data.json";
 import { useState } from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import "@/app/transition.css";
 
 export default function Home() {
 	const [search, setSearch] = useState("");
@@ -15,12 +17,12 @@ export default function Home() {
 				<Title search={search} setSearch={setSearch} />
 				<div className=" w-full h-full overflow-y-scroll pb-12">
 					{search === "" && (
-						<div className=" w-full h-[800px] flex justify-center p-10">
+						<div className=" w-full h-[600px] flex justify-center p-10">
 							<ImageSlider />
 						</div>
 					)}
 					<div className=" w-full h-fit">
-						<div className=" w-full h-fit px-8 pt-5 flex flex-wrap gap-10 justify-center">
+						<TransitionGroup className=" w-full h-fit px-8 pt-5 flex flex-wrap gap-10 justify-center">
 							{data.styles.map((style, i) => {
 								if (search !== "") {
 									if (
@@ -30,14 +32,20 @@ export default function Home() {
 										return null;
 								}
 								return (
-									<Card
+									<CSSTransition
 										key={i}
-										title={style["title"]}
-										image={style["image"]}
-									/>
+										classNames={"card"}
+										timeout={1000}
+										unmountOnExit
+									>
+										<Card
+											title={style["title"]}
+											image={style["image"]}
+										/>
+									</CSSTransition>
 								);
 							})}
-						</div>
+						</TransitionGroup>
 					</div>
 				</div>
 			</div>

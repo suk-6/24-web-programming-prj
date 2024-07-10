@@ -8,7 +8,7 @@ interface CardProps {
 
 export const Card = ({ title, image }: CardProps) => {
 	return (
-		<div className=" w-fit h-[28rem] flex flex-col bg-gray-100 rounded-xl shadow-xl">
+		<div className=" w-fit h-[20rem] flex flex-col bg-gray-100 rounded-xl shadow-xl">
 			<Image
 				src={image}
 				width={1000}

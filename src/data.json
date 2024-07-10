@@ -29,7 +29,7 @@
 			"image": "https://file.suk.kr/2024-webp/4.jpeg",
 			"tags": [
 				"얼굴형 다 포함",
-				"이마가 넓든 안넓든 다 좋다",
+				"이마 상관없음",
 				"눈썹이 안이쁘다",
 				"손질 못함"
 			]
@@ -66,7 +66,36 @@
 			"id": 8,
 			"title": "다운펌 ",
 			"image": "https://file.suk.kr/2024-webp/8.jpeg",
-			"tags": ["얼굴형 다 포함", "손질 잘함"]
+			"tags": ["얼굴이 작음", "손질 잘함"]
+		},
+		{
+			"id": 9,
+			"title": "태슬컷 ",
+			"image": "https://file.suk.kr/2024-webp/9.jpeg",
+			"tags": ["얼굴이 작음", "이마 넓지 않음", "손질 못함"]
+		},
+		{
+			"id": 10,
+			"title": "레이어드 C컬 ",
+			"image": "https://file.suk.kr/2024-webp/10.jpeg",
+			"tags": [
+				"모든 얼굴형에 포함",
+				"눈썹이 이쁘다",
+				"이마 넓지 않음",
+				"손질 잘함"
+			]
+		},
+		{
+			"id": 11,
+			"title": "허쉬컷 ",
+			"image": "https://file.suk.kr/2024-webp/11.jpeg",
+			"tags": ["긴 얼굴형 제외", "얼굴이 작음", "손질 못함"]
+		},
+		{
+			"id": 12,
+			"title": "히피펌 ",
+			"image": "https://file.suk.kr/2024-webp/12.jpeg",
+			"tags": ["둥근 얼굴형", "손질 잘함", "이마 상관없음"]
 		}
 	]
 }

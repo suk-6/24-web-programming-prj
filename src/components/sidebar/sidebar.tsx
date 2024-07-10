@@ -12,8 +12,8 @@ export const Sidebar = ({
 	const uniqueTags = Array.from(new Set(tags.flat()));
 
 	return (
-		<div className=" absolute top-[5rem] left-0 w-52 h-[calc(100vh-5.125rem)] bg-white shadow-lg z-10 select-none">
-			<div className=" w-full h-full flex flex-col gap-1 p-4">
+		<div className=" absolute top-[73px] left-0 w-52 h-[calc(100vh-73px)] bg-white shadow-lg z-10 select-none overflow-hidden">
+			<div className=" w-full h-full flex flex-col gap-1 p-2 px-3">
 				<SidebarItem title="스타일 별">
 					{data.styles.map((style, i) => (
 						<SidebarSubitem

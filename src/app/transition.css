@@ -1,5 +1,5 @@
 .card {
-	transition: flex 500ms ease-out;
+	transition: all 500ms ease-out;
 }
 
 /* .card-enter {
@@ -9,6 +9,10 @@
 /* .card-enter-active {
 	transition: all 5000ms ease-out;
 } */
+
+.card-enter-done {
+	transition: flex 500ms ease-out;
+}
 
 .card-exit {
 	transform: translateX(0);
